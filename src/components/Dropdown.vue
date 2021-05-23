@@ -58,8 +58,10 @@ export default {
     position: relative;
     font-size: .9em;
     width: 200px;
+    cursor: pointer;
     .dropdown, .options {
-        background: white;
+        background: var(--lighter-background-color);
+        color: var(--text-color);
         box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
         padding: 10px 15px;
         border-radius: 5px;

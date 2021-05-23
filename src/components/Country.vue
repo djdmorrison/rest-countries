@@ -21,7 +21,7 @@ export default {
 
 <style scoped lang="scss">
     .country {
-        background: white;
+        background: var(--lighter-background-color);
         border-radius: 5px;
         box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.05);
         img {
@@ -34,15 +34,12 @@ export default {
         .details {
             padding: 20px;
             font-size: .9em;
+            color: var(--text-color);
             .name {
                 font-weight: 800;
                 font-size: 1.2em;
                 margin-bottom: 10px;
             }
         }
-    }
-
-    p {
-        color: var(--background);
     }
 </style>

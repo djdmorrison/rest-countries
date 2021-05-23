@@ -22,14 +22,16 @@ export default {
 <style scoped lang="scss">
 .input-wrapper {
     padding: 10px 20px;
-    background: white;
+    background: var(--lighter-background-color);
+    color: var(--text-color);
     box-shadow: 0px 2px 8px -2px rgb(0 0 0 / 10%);
     border-radius: 5px;
     display: flex;
     align-items: center;
-    color: var(--dark-grey);
     width: 250px;
     input {
+        background: var(--lighter-background-color);
+        color: var(--text-color);
         padding: 10px 20px;
         border: none;
         flex: 1;
