@@ -60,6 +60,10 @@ export default {
         font-weight: 600;
     }
 
+    p {
+        color: var(--text-color);
+    }
+    
     .btn {
         background: var(--lighter-background-color);
         box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.05);
@@ -68,8 +72,8 @@ export default {
         align-items: center;
         font-size: .9em;
         margin-bottom: 10px;
-        svg {
-            margin-right: 8px;
+        svg + * {
+            margin-left: 8px;
         }
         &:not(:last-of-type) {
             margin-right: 10px;
@@ -77,6 +81,19 @@ export default {
         &.btn-small {
             padding: 5px 10px;
         }
+        &.btn-square {
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    .text-center {
+        align-self: center;
+    }
+    .text-muted {
+        opacity: .5;
     }
 
     body {

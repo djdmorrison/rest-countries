@@ -87,6 +87,7 @@ export default {
         position: absolute;
         margin-top: 5px;
         width: 100%;
+        z-index: 999;
         .option {
             cursor: pointer;
             &:hover {
