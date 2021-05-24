@@ -1,13 +1,15 @@
 <template>
-    <div class="country">
-        <img :src="details.flag">
-        <div class="details">
-            <p class="name">{{ details.name }}</p>
-            <p><b>Population:</b> {{ details.population }}</p>
-            <p><b>Region:</b> {{ details.region }}</p>
-            <p><b>Capital:</b> {{ details.capital }}</p>
+    <router-link :to="'/country/' + details.alpha3Code">
+        <div class="country">
+            <img :src="details.flag">
+            <div class="details">
+                <p class="name">{{ details.name }}</p>
+                <p><b>Population:</b> {{ details.population }}</p>
+                <p><b>Region:</b> {{ details.region }}</p>
+                <p><b>Capital:</b> {{ details.capital }}</p>
+            </div>
         </div>
-    </div>
+    </router-link>
 </template>
 
 <script>
