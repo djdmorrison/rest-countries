@@ -26,6 +26,14 @@ export default {
         background: var(--lighter-background-color);
         border-radius: 5px;
         box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.05);
+        position: relative;
+        top: 0;
+        transition: top 100ms ease, box-shadow 100ms ease;
+        &:hover {
+            top: -5px;
+            box-shadow: 0 3px 8px -4px rgba(0, 0, 0, 0.2);
+
+        }
         img {
             width: 100%;
             height: 175px;
