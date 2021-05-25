@@ -1,7 +1,7 @@
 <template>
     <router-link :to="'/country/' + details.alpha3Code">
         <div class="country">
-            <img :src="details.flag">
+            <img :src="details.flag" :alt="details.name + ' flag'">
             <div class="details">
                 <p class="name">{{ details.name }}</p>
                 <p><b>Population:</b> {{ details.population }}</p>
