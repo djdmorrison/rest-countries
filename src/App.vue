@@ -63,7 +63,7 @@ export default {
     p {
         color: var(--text-color);
     }
-    
+
     .btn {
         background: var(--lighter-background-color);
         box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.05);
@@ -91,6 +91,7 @@ export default {
 
     .text-center {
         align-self: center;
+        text-align: center;
     }
     .text-muted {
         opacity: .5;

@@ -6,8 +6,10 @@
             </svg>
             <span>Home</span>
         </router-link>
+        
+        <p v-if="!country" class="text-center text-muted">404: Country not found</p>
 
-        <div class="detail-container">
+        <div v-if="country" class="detail-container">
             <img :src="country.flag">
             <div class="detail">
                 <h2>{{ country.name }}</h2>
