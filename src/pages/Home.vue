@@ -47,7 +47,6 @@ export default {
         return {
             searchFilter: '',
             regionFilter: '',
-            darkTheme: false,
             paginationPage: 0,
             paginationSize: 24            
         }
@@ -56,10 +55,6 @@ export default {
         updateRegionFilter(region) {
             this.regionFilter = region;
             this.paginationPage = 0;
-        },
-        toggleDarkTheme() {
-            this.darkTheme = !this.darkTheme;
-            document.body.classList.toggle('dark-theme');
         },
         paginationClick(page) {
             this.paginationPage = page;
