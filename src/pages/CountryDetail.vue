@@ -57,6 +57,8 @@ export default {
             return this.countries.find(country => country.alpha3Code === this.$route.params.id)
         },
         borders () {
+            if (!this.country.borders) return [];
+            
             return this.country.borders.map(countryCode => {
                 return {
                     name: this.countries.find(country => country.alpha3Code === countryCode).name,
